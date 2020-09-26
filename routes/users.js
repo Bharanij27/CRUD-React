@@ -41,7 +41,10 @@ router.post("/user",async function (req, res) {
       message : 'Updated User Scuccessfully'
     })
 
+    console.log(users)
+
   } catch (error) {
+    console.log(error);
     res.json({
       status : 404,
       message : error || 'Something went wrong'
